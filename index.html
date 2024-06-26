@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="musica, cancion, artista, bailar, escuchar, disfrutar, cantar, reprodicir, ritmo, melodia ">
+    <meta name="description"
+        content="Disfruta de tu música favorita en cualquier lugar y en cualquier momento con nuestro reproductor de música">
+    <title>Reproductor</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <!-- aquí estaba escrito como "reproduntor" -->
+    <main class="reproductor">
+
+        <section class="reproduccion">
+
+            <div class="reproduccion__titulo">
+                <p id="autor">LP</p>
+                <P id="titulo">Lost On You</P>
+            </div>
+
+            <div class="reproduccion__titulo__imagen">
+                <img src="/Assets/portada.png" alt="" id="portada">
+
+            </div>
+
+    
+            <div class="reproduccion__iconos">
+
+                <img src="/Assets/1904657-bookmark-favorite-favourite-heart-like-lover-romance_122507 1.png" alt="">
+                <img src="/Assets/Vector.png" alt="">
+                <img src="/Assets/wondicon-ui-free-speaker_111240 1.png" alt="">
+            </div>
+
+            <div class="reproduccion__iconos__mus">
+
+                <input type="range" value="20" min="0" >
+                <p>1:40</p>
+
+                <audio src="" class="reproduccion__iconos__mus" id="audio" autoplay></audio>
+            </div>
+
+            <div class="reproduccion__iconos__mus__pas">
+
+                <img src="/Assets/previous.png" alt="">
+                <img id="pausa" src="/Assets/Frame 427319131.png" alt="">
+                <img src="/Assets/next.png" alt="">
+            </div>
+        </section>
+
+        <section class="lista">
+
+
+            <header>
+                <div class="lista__busqueda">
+
+                    <input type="text" placeholder="Buscar">
+                    <button><img src="/Assets/Ellipse 5.png" alt=""></button>
+
+                </div>
+
+                <div>
+
+                    <button><img src="/Assets/Frame 1.png" alt=""></button>
+                    <button><img src="/Assets/Frame 1 (1).png" alt=""></button>
+                    <button><img src="/Assets/Frame 1 (2).png" alt=""></button>
+                </div>
+
+            </header>
+
+            <!-- Contenedor de las canciones -->
+            <div class="musica" id="track-list">
+
+                <!-- <div>
+
+                    <img src="/Assets/portada.png" alt="">
+                    <p>LP - Lost On You</p>
+                    <img src="/Assets/iconfinder-musicmelodysoundaudio46-4105535_113849 1.png" alt="">
+                </div> -->
+<!-- 
+                <div>
+
+                    <img src="/Assets/pexels-thibault-trillet-44912-167605 1 (1).png" alt="">
+                    <p>LP - 4 Nom Blandes - Whasts UP </p>
+                    <button><img src="/Assets/multimedia_pause_button_icon_149073 1.png" alt=""></button>
+                    <button><img src="/Assets/play.png" alt=""></button>
+                    <button><img src="/Assets/dots_three_outline_vertical_thin_icon_171812 1.png" alt=""></button>
+                </div>
+
+
+                <div>
+
+                    <img src="/Assets/pexels-thibault-trillet-44912-167605 1 (2).png" alt="">
+                    <p>Queen - Radio Ga Ga</p>
+                    <button><img src="/Assets/multimedia_pause_button_icon_149073 1.png" alt=""></button>
+                    <button><img src="/Assets/play.png" alt=""></button>
+                    <button><img src="/Assets/dots_three_outline_vertical_thin_icon_171812 1.png" alt=""></button>
+                </div>
+
+                <div>
+
+                    <img src="/Assets/pexels-thibault-trillet-44912-167605 1 (3).png" alt="">
+                    <p>Coldplay - Viva la Vida</p>
+                    <button><img src="/Assets/multimedia_pause_button_icon_149073 1.png" alt=""></button>
+                    <button><img src="/Assets/play.png" alt=""></button>
+                    <button><img src="/Assets/dots_three_outline_vertical_thin_icon_171812 1.png" alt=""></button>
+                </div>
+
+                <div>
+
+                    <img src="/Assets/pexels-thibault-trillet-44912-167605 1 (5).png" alt="">
+                    <p>Miranda - Don</p>
+                    <button><img src="/Assets/multimedia_pause_button_icon_149073 1.png" alt=""></button>
+                    <button><img src="/Assets/play.png" alt=""></button>
+                    <button><img src="/Assets/dots_three_outline_vertical_thin_icon_171812 1.png" alt=""></button>
+                </div>
+
+                <div>
+
+                    <img src="/Assets/pexels-thibault-trillet-44912-167605 1 (6).png" alt="">
+                    <p>Miley cyrus - Flower</p>
+                    <button><img src="/Assets/multimedia_pause_button_icon_149073 1.png" alt=""></button>
+                    <button><img src="/Assets/play.png" alt=""></button>
+                    <button><img src="/Assets/dots_three_outline_vertical_thin_icon_171812 1.png" alt=""></button>
+                </div> -->
+
+            </div>
+
+
+
+        </section>
+    </main>
+    <script src="/script.js"></script>
+
+
+</body>
