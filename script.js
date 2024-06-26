@@ -15,10 +15,10 @@ const tipoArray = [
 ]
 
 const tipoObjeto = {
-raza: 'kacri',
-edad: 15,
-dueño: 'carlos',
-hambre: false,
+    raza: 'kacri',
+    edad: 15,
+    dueño: 'carlos',
+    hambre: false,
 
 
 }
@@ -63,8 +63,29 @@ axios.get('https://leonardoapi.onrender.com/songs')
                 </button>
             `
 
+            div.addEventListener('click', () => {
+                
+                document.getElementById('portada').setAttribute('src', song.path.front)
+    
+                document.getElementById('titulo').innerHTML = song.title
+                document.getElementById('autor').innerHTML = song.author
+                
+                const audio = document.getElementById('audio')
+                audio.setAttribute('src', song.path.audio)
 
-            trackList.appendChild(div) 
+                document.getElementById('pausa').addEventListener('click', () => {
+                    if(audio.paused){
+                        audio.play()
+                    } else{
+                        audio.pause()
+                    }
+                }
+            )
+
+
+            })
+
+            trackList.appendChild(div)
         })
 
     })
